@@ -24,7 +24,9 @@ information. All of the stations and slots will be managed by the administrator.
 ## Installation
 threr are two folder in application 
 1. cars -> backend
-2. frontend 
+env\Scripts\activate
+python manage.py runserver
+2. frontend ->npm run dev
 
 backend is fully written in python with django rest framework and frontend is made by using react.
 Step 1 : Run Cars backend
