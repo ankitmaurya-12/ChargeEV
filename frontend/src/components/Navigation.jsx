@@ -38,7 +38,7 @@ function Navigation() {
               className="hover:text-red-400 transition-all duration-200 ease-in-out"
               to={"help/"}
             >
-              Help
+              Notification
             </NavLink>
           </li>
           <li>
