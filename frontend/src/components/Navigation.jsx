@@ -36,9 +36,17 @@ function Navigation() {
           <li>
             <NavLink
               className="hover:text-red-400 transition-all duration-200 ease-in-out"
+              to={"contact-us/"}
+            >
+              Contact Us
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="hover:text-red-400 transition-all duration-200 ease-in-out"
               to={"help/"}
             >
-              Notification
+              Help
             </NavLink>
           </li>
           <li>
@@ -46,7 +54,7 @@ function Navigation() {
               className="hover:text-red-400 transition-all duration-200 ease-in-out"
               to={"about/"}
             >
-              About
+              About Us
             </NavLink>
           </li>
           {isUserLogin == true ? (

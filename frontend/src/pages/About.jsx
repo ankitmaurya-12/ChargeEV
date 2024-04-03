@@ -26,11 +26,15 @@ import {
 } from "@mui/material";
 
 import { color, Stack } from "@mui/system";
+import Footer from "./Footer";
 function About() {
   const [expanded, setExpanded] = useState(false);
   const handleChange = (isExpanded, panel) => {
     setExpanded(isExpanded ? panel : false);
   };
+
+
+
 
   const Events = [
     {
@@ -309,83 +313,8 @@ function About() {
         </Box>
       </Box>
 
-      <Grid container>
-        <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ textAlign: "center" }}>
-            feedBackForm
-          </Typography>
-          <Card elevation={10} sx={{ margin: 5 }}>
-            <Stack spacing={2} direction="column" padding={5}>
-              <TextField
-                label="User Name"
-                placeholder="Enter your User Name"
-                required
-              />
-              <TextField
-                label="Email"
-                placeholder="Enter Your Email"
-                required
-              />
-              {/* <TextField label='FeedBack' placeholder="Enter Your Message"   required  /> */}
-              <TextareaAutosize
-                aria-label="empty textarea"
-                placeholder="Messages"
-                variant="contained"
-                required
-                minRows={5}
-              />
-              <Button variant="contained" size="large">
-                Submit
-              </Button>
-            </Stack>
-          </Card>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Typography variant="h5" sx={{ textAlign: "center" }}>
-            Office
-          </Typography>
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              borderLeft: "2px solid black",
-            }}
-          >
-            <Card
-              elevation={10}
-              sx={{ padding: "110px", marginTop: "30px", margin: 5 }}
-            >
-              <Stack spacing={2}>
-                <Stack>
-                  <Typography variant="h5" sx={{ textAlign: "center" }}>
-                    Visit Office
-                  </Typography>
-                  <Typography sx={{ textAlign: "center" }}>
-                    Maharashtera Thane west
-                  </Typography>
-                </Stack>
-                <Stack>
-                  <Typography variant="h5" sx={{ textAlign: "center" }}>
-                    Call Us
-                  </Typography>
-                  <Typography sx={{ textAlign: "center" }}>
-                    123453332 / 4444324
-                  </Typography>
-                </Stack>
-                <Stack>
-                  <Typography variant="h5" sx={{ textAlign: "center" }}>
-                    Send Email
-                  </Typography>
-                  <Typography sx={{ textAlign: "center" }}>
-                    EvCharge@gmail.com
-                  </Typography>
-                </Stack>
-              </Stack>
-            </Card>
-          </Box>
-        </Grid>
-      </Grid>
+     
+      <Footer/>
     </>
   );
 }

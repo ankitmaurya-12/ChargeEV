@@ -10,6 +10,9 @@ import "./App.css";
 import SingleStations from "./pages/SingleStations";
 import Auth from "./pages/Auth";
 import NotFound404 from "./pages/NotFound404";
+
+import ContactUs from "./pages/ContactUs";
+
 import Profile from "./components/Profile";
 import DashBoard from "./pages/DashBoard";
 import BookedStation from "./pages/SubPages/BookedStation";
@@ -35,6 +38,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="about/" element={<About />} />
             <Route path="explore/" element={<Explore />} />
+            <Route path="contact-us/" element={<ContactUs />} />
             <Route path="login/" element={<Auth />} />
             <Route path="dashboard/" element={<DashBoard />}>
               <Route path="profile/" element={<Profile />} />

@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import MyStations from "./SubPages/MyStation";
 
 function DashBoard() {
   return (
@@ -14,6 +15,11 @@ function DashBoard() {
         <Link to={"/dashboard/bookedstation"}>
           <Button variant="text" fullWidth>
             Booked Station
+          </Button>
+        </Link>
+        <Link to={"/dashboard/favouritestation"}>
+          <Button variant="text" fullWidth>
+            Favourite Station
           </Button>
         </Link>
       </div>
