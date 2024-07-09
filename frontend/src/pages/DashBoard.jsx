@@ -7,7 +7,7 @@ function DashBoard() {
   return (
     <div className="flex min-h-screen">
       <div className="flex-[0.2] border-r-2 min-h-screen flex px-auto flex-col pt-5 space-y-5">
-        <Link to={"/dashboard/profile"}>
+        <Link to={"/dashboard/profile/"}>
           <Button variant="text" fullWidth>
             Profile
           </Button>
@@ -17,11 +17,16 @@ function DashBoard() {
             Booked Station
           </Button>
         </Link>
-        <Link to={"/dashboard/favouritestation"}>
+        {/* <Link to={"/dashboard/favouritestation"}>
           <Button variant="text" fullWidth>
-            Favourite Station
+          Favourite Station
           </Button>
         </Link>
+        <Link to={`/dashboard/reviews`}>
+          <Button variant="text" fullWidth>
+            Your Reviews
+          </Button>
+        </Link> */}
       </div>
       <div className="flex-1">
         <Outlet />

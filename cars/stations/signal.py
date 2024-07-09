@@ -35,4 +35,4 @@ def send_mail_to_user(sender, instance, created, **kwargs):
         subject = f"ChangEV | You Just Book A Charging Station."
         message = f"Hello User With Email {user}. You Just Book A Charging Station {station}. timing of charging station is between {time_slot[slot]}. for date: {date}"
         send_mail(subject, message,
-                  "20102144.vishwajeet.vishwakarma@gmail.com", [user])
+                  "EMAIL_HOST_USER", [user])

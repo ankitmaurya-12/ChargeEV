@@ -7,12 +7,12 @@ function Navigation() {
   const [isNavBarOpen, setIsNavBarOpen] = useState(false);
   return (
     <header>
-      <nav className="flex justify-between items-center px-5 z-50 py-3 border-b-2 animate-fadeInUp ">
+      <nav className="flex justify-between items-center px-7 z-50 py-3 border-b-2 animate-fadeInUp ">
         <Link
           className="text-4xl font-bold tracking-wider text-red-400  "
           to={"/"}
         >
-          ChargEV.
+          ChargeEV.
         </Link>
         <ul className="hidden md:flex justify-center items-center space-x-10">
           <li>
@@ -21,6 +21,14 @@ function Navigation() {
               to={"explore/"}
             >
               Explore
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="hover:text-red-400 transition-all duration-200 ease-in-out"
+              to={"news/"}
+            >
+              News
             </NavLink>
           </li>
           {isUserLogin && (
@@ -41,14 +49,14 @@ function Navigation() {
               Contact Us
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               className="hover:text-red-400 transition-all duration-200 ease-in-out"
               to={"help/"}
             >
               Help
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink
               className="hover:text-red-400 transition-all duration-200 ease-in-out"

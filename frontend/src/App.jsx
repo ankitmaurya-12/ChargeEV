@@ -18,6 +18,10 @@ import DashBoard from "./pages/DashBoard";
 import BookedStation from "./pages/SubPages/BookedStation";
 import MyStation from "./pages/SubPages/MyStation";
 import SlotBookedStation from "./pages/SlotBookedStation";
+import Reviews from "./pages/SubPages/Reviews";
+import News from './pages/News';
+
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -38,12 +42,14 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="about/" element={<About />} />
             <Route path="explore/" element={<Explore />} />
+            <Route path="news/" element={<News />} />
             <Route path="contact-us/" element={<ContactUs />} />
             <Route path="login/" element={<Auth />} />
             <Route path="dashboard/" element={<DashBoard />}>
               <Route path="profile/" element={<Profile />} />
-              <Route path="mystation/" element={<MyStation />} />
+              <Route path="favouritestation/" element={<MyStation />} />
               <Route path="bookedstation/" element={<BookedStation />} />
+              <Route path="reviews/" element={<Reviews />} />
             </Route>
             <Route path="station/:stationId" element={<SingleStations />} />
             <Route

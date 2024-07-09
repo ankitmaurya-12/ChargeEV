@@ -40,7 +40,7 @@ function UserProfilePic() {
           "aria-labelledby": "basic-button",
         }}
       >
-        <MenuItem onClick={() => navigate("/dashboard/profile")}>
+        <MenuItem onClick={() => navigate("/dashboard/profile/")}>
           Profile
         </MenuItem>
         <MenuItem onClick={userLoggedOut}>Logout</MenuItem>

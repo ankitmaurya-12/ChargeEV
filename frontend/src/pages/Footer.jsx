@@ -5,17 +5,38 @@ import { Typography } from '@mui/material'
 const Footer = () => {
   return (
     <footer className="w-full bg-dark p-8">
-      <div className="flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
+      <div className="mx-1.5 flex flex-row flex-wrap items-center justify-center gap-y-6 gap-x-12 bg-white text-center md:justify-between">
         <Link to="/" className="text-3xl font-bold tracking-wider text-red-400">
-          ChargEV.
+          ChargeEV.
         </Link>
         <ul className="flex flex-wrap items-center gap-y-2 gap-x-8">
           <li>
             <Typography
               component={Link}
-              to="#"
+              to="/explore/"
               color="blue-gray"
               className="font-normal transition-colors hover:text-red-500 focus:text-red-500"
+            >
+              Explore
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              component={Link}
+              to="/news"
+              color="blue-gray"
+              className="font-normal transition-colors hover:text-red-500 focus:text-red-500"
+            >
+              News
+            </Typography>
+          </li>
+          <li>
+            <Typography
+              component={Link}
+              to="/about"
+              color="blue-gray"
+              className="font-normal transition-colors hover:text-red-500 focus:text-red-500"
+              
             >
               About Us
             </Typography>
@@ -23,27 +44,7 @@ const Footer = () => {
           <li>
             <Typography
               component={Link}
-              to="#"
-              color="blue-gray"
-              className="font-normal transition-colors hover:text-red-500 focus:text-red-500"
-            >
-              License
-            </Typography>
-          </li>
-          <li>
-            <Typography
-              component={Link}
-              to="#"
-              color="blue-gray"
-              className="font-normal transition-colors hover:text-red-500 focus:text-red-500"
-            >
-              Contribute
-            </Typography>
-          </li>
-          <li>
-            <Typography
-              component={Link}
-              to="#"
+              to="/contact-us"
               color="blue-gray"
               className="font-normal transition-colors hover:text-red-500 focus:text-red-500"
             >
@@ -56,6 +57,10 @@ const Footer = () => {
       <Typography color="blue-gray" className="text-center font-normal">
         Copyright &copy; 2024 CahrgeEV. All rights reserved.
       </Typography>
+      <Typography color="blue-gray" className="text-center font-normal">
+      Made with <span class="lnr lnr-heart" style={{ color: '#F87171', fontSize: '17px', fontWeight:'bold'}}></span> in India.
+      </Typography>
+
     </footer>
   )
 }

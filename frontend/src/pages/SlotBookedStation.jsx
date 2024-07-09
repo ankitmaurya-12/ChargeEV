@@ -131,7 +131,7 @@ function SlotBookedStation() {
                   >
                     {data}
                   </Button>
-                ))}
+                ))} 
               </div>
             </>
           )}
